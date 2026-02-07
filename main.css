@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: lightblue;
+}
+/*Trang chu*/
+.home {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Lien he*/
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a64b2a;
+}
+.contact .phone {
+  font-size: 50px;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column; /*sắp xếp các phần tử con bên trong một container theo chiều dọc, từ trên xuống dướ*/
+}
+.contact-text small {
+  display: block;
+  font-size: 15px;
+  color: #888;
+}
+.contact-text strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+/*Icon ben phai*/
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px; /*Tao khoan cah giua cac hang, cot*/
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Căn giữa các item */
+  cursor: pointer;
+  position: relative;
+}
+/*Gio Hang*/
+.cart {
+  background: #b45a35;
+  color: white;
+  border: none;
+}
+.cart .badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #d35400;
+  color: white;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
