@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "Name": "LOD1 Loan Chair",
+    "price": 200,
+    "image": "image1.png"
+  },
+  {
+    "id": 2,
+    "Name": "LOD1 Loa Chair",
+    "price": 200,
+    "image": "image3.png"
+  },
+  {
+    "id": 3,
+    "Name": "LOD1 Le Chair",
+    "price": 200,
+    "image": "image4.png"
+  },
+  {
+    "id": 4,
+    "Name": "LOD2 Luy Chair",
+    "price": 200,
+    "image": "image5.png"
+  },
+  {
+    "id": 5,
+    "Name": "LOD4 L0 Chair",
+    "price": 200,
+    "image": "image6.png"
+  },
+  {
+    "id": 6,
+    "Name": "LOD5 Lip Chair",
+    "price": 200,
+    "image": "image7.png"
+  },
+  {
+    "id": 7,
+    "Name": "LOD6 Lop Chair",
+    "price": 200,
+    "image": "image8.png"
+  },
+  {
+    "id": 8,
+    "Name": "LOD7 Loi Chair",
+    "price": 200,
+    "image": "image9.png"
+  },
+  {
+    "id": 9,
+    "Name": "LOD8 Len Chair",
+    "price": 200,
+    "image": "image10.png"
+  },
+  {
+    "id": 10,
+    "Name": "LOD9 Love Chair",
+    "price": 200,
+    "image": "image11.png"
+  },
+  {
+    "id": 11,
+    "Name": "LOD10 Lobe Chair",
+    "price": 200,
+    "image": "image3.png"
+  }
+]
