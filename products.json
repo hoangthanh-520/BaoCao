@@ -3,66 +3,77 @@
     "id": 1,
     "Name": "LOD1 Loan Chair",
     "price": 200,
-    "image": "image1.png"
+    "image": "image1.png",
+    "category": "nuong"
   },
   {
     "id": 2,
     "Name": "LOD1 Loa Chair",
-    "price": 200,
-    "image": "image3.png"
+    "price": 229,
+    "image": "image3.png",
+    "category": "nuong"
   },
   {
     "id": 3,
     "Name": "LOD1 Le Chair",
-    "price": 200,
-    "image": "image4.png"
+    "price": 236,
+    "image": "image4.png",
+    "category": "nuong"
   },
   {
     "id": 4,
     "Name": "LOD2 Luy Chair",
-    "price": 200,
-    "image": "image5.png"
+    "price": 218,
+    "image": "image5.png",
+    "category": "lanh"
   },
   {
     "id": 5,
     "Name": "LOD4 L0 Chair",
-    "price": 200,
-    "image": "image6.png"
+    "price": 283,
+    "image": "image6.png",
+    "category": "lanh"
   },
   {
     "id": 6,
     "Name": "LOD5 Lip Chair",
-    "price": 200,
-    "image": "image7.png"
+    "price": 267,
+    "image": "image7.png",
+    "category": "lanh"
   },
   {
     "id": 7,
     "Name": "LOD6 Lop Chair",
-    "price": 200,
-    "image": "image8.png"
+    "price": 272,
+    "image": "image8.png",
+    "category": "kem"
   },
   {
     "id": 8,
     "Name": "LOD7 Loi Chair",
-    "price": 200,
-    "image": "image9.png"
+    "price": 290,
+    "image": "image9.png",
+    "category": "kem"
   },
   {
     "id": 9,
     "Name": "LOD8 Len Chair",
-    "price": 200,
-    "image": "image10.png"
+    "price": 300,
+    "image": "image10.png",
+    "category": "kem"
   },
   {
     "id": 10,
     "Name": "LOD9 Love Chair",
-    "price": 200,
-    "image": "image11.png"
+    "price": 354,
+    "image": "image11.png",
+    "category": "kem"
   },
   {
     "id": 11,
     "Name": "LOD10 Lobe Chair",
-    "price": 200,
-    "image": "image3.png"
+    "price": 999,
+    "image": "image3.png",
+    "category": "kem"
   }
 ]
