@@ -1,3 +1,4 @@
+
 body {
   background: #f6f5f7;
   margin: 0;
@@ -7,7 +8,29 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.home{
+  text-decoration: none;
+  color: #150909;
+  position: relative; 
+}
+.home:hover{
+  text-decoration: none;
+  color: rgb(231, 93, 38);
+}
+.home::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(231, 93, 38);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+.home:hover::after {
+  width: 100%;
+}
 .container {
   background-color: #ffffff;
   border-radius: 30px;
@@ -93,9 +116,11 @@ body {
 }
 #register {
   border-radius: 5px;
+  background-color: aqua;
 }
 #Login {
   border-radius: 5px;
+  background-color: aqua;
 }
 
 .toggle {

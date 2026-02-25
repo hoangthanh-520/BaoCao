@@ -1,50 +1,65 @@
 <!doctype html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Đăng nhập | Tiệm Bánh</title>
 
-    <!-- ICON + HEADER CSS -->
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Đăng nhập | Tiệm Bánh</title>
+  <!-- LOGIN CSS RIÊNG -->
+  <link rel="stylesheet" href="login.css" />
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
 
-    <!-- LOGIN CSS RIÊNG -->
-    <link rel="stylesheet" href="login.css" />
-    <link rel="icon" href="icon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-
-  <body>
-    <header class="top-bar">
+<body>
+  <!-- HEADER GIỮ NGUYÊN -->
+  <header class="top-bar">
+    <div>
+      <a href="index.html">
+        <img src="TYPO.png" width="300px" />
+      </a>
+    </div>
+    <div>
+      <a class="home" href="\BaoCao\main.html">
+        <b>TRANG CHỦ</b>
+      </a>
+    </div>
+    <div>
+      <a class="home" href="#">
+        <b>SẢN PHẨM</b>
+      </a>
+    </div>
+    <!--Lien he-->
+    <div class="contact">
+      <i class="fa-solid fa-phone end phone"></i>
+      <div class="contact-text">
+        <small>Liên hệ đặt bánh</small>
+        <strong>079.677.890</strong>
+      </div>
+    </div>
+    <!--Tim kiem, TK,GH-->
+    <div class="actions">
       <div>
-        <a href="index.html">
-          <img src="TYPO.png" width="300px" />
+        <a href="#">
+        <i class="fa-solid fa-search end icon"></i>
         </a>
       </div>
       <div>
-        <a href="main.html"><b>TRANG CHỦ</b></a>
+        <a href="login.html">
+          <i class="bi-solid bi-person end icon"></i>
+        </a>
       </div>
-      <div><a href="GH.html">SẢN PHẨM</a></div>
-      <div class="actions"> 
-          <a href="D:\BaoCAoo\BaoCao\login.html">DANG NHAP</a>
-        </i>
+      <div>
+        <a href="GH.html">
+          <i class="fa-solid fa-shopping-cart end icon cart">
+            <span class="badge">0</span>
+          </i>
+        </a>
       </div>
-      <div class="contact">
-        <i class="fa-solid fa-phone phone"></i>
-        <div class="contact-text">
-          <small>Liên hệ đặt bánh</small>
-          <strong>079.677.890</strong>
-        </div>
-      </div>
-    </header>
-
+    </div>
+  </header>
+  <main>
     <div class="container" id="container">
       <!-- FORM ĐĂNG KÝ -->
       <div class="form-container sign-up">
@@ -87,9 +102,11 @@
         </div>
       </div>
     </div>
-    <!-- FOOTER TRỐNG -->
-    <footer></footer>
+  </main>
+  <!-- FOOTER TRỐNG -->
+  <footer></footer>
 
-    <script src="login.js"></script>
-  </body>
+  <script src="login.js"></script>
+</body>
+
 </html>

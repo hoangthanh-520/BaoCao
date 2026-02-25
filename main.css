@@ -12,8 +12,27 @@
   background: lightblue;
 }
 /*Trang chu*/
-.home {
-  font-family: Arial, Helvetica, sans-serif;
+.home{
+  color: #150909;
+  position: relative; 
+}
+.home:hover{
+  text-decoration: none;
+  color: rgb(231, 93, 38);
+}
+.home::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(231, 93, 38);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+.home:hover::after {
+  width: 100%;
 }
 /*Lien he*/
 .contact {
@@ -54,6 +73,9 @@
   justify-content: center; /* Căn giữa các item */
   cursor: pointer;
   position: relative;
+}
+a{
+  text-decoration: none;
 }
 /*Gio Hang*/
 .cart {
