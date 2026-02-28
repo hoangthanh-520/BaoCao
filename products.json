@@ -1,79 +1,285 @@
 [
   {
     "id": 1,
-    "Name": "LOD1 Loan Chair",
+    "Name": "Baguette",
     "price": 200,
-    "image": "image1.png",
+    "image": "Bánh Nướng/Baguette.JPG",
     "category": "nuong"
   },
   {
     "id": 2,
-    "Name": "LOD1 Loa Chair",
+    "Name": "Brownie",
     "price": 229,
-    "image": "image3.png",
+    "image": "Bánh Nướng/Brownie.JPG",
     "category": "nuong"
   },
   {
     "id": 3,
-    "Name": "LOD1 Le Chair",
+    "Name": "Cookie",
     "price": 236,
-    "image": "image4.png",
+    "image": "Bánh Nướng/Cookie.JPG",
     "category": "nuong"
   },
   {
     "id": 4,
-    "Name": "LOD2 Luy Chair",
+    "Name": "Croissant",
     "price": 218,
-    "image": "image5.png",
-    "category": "lanh"
+    "image": "Bánh Nướng/Croissant.JPG",
+    "category": "nuong"
   },
   {
     "id": 5,
-    "Name": "LOD4 L0 Chair",
+    "Name": "Cupcake",
     "price": 283,
-    "image": "image6.png",
-    "category": "lanh"
+    "image": "Bánh Nướng/cupcake.JPG",
+    "category": "nuong"
   },
   {
     "id": 6,
-    "Name": "LOD5 Lip Chair",
+    "Name": "Macaron",
     "price": 267,
-    "image": "image7.png",
-    "category": "lanh"
+    "image": "Bánh Nướng/macaron.JPG",
+    "category": "nuong"
   },
   {
     "id": 7,
-    "Name": "LOD6 Lop Chair",
+    "Name": "Muffin",
     "price": 272,
-    "image": "image8.png",
-    "category": "kem"
+    "image": "Bánh Nướng/Muffin.JPG",
+    "category": "nuong"
   },
   {
     "id": 8,
-    "Name": "LOD7 Loi Chair",
+    "Name": "Scone",
     "price": 290,
-    "image": "image9.png",
-    "category": "kem"
+    "image": "Bánh Nướng/scone.JPG",
+    "category": "nuong"
   },
   {
     "id": 9,
-    "Name": "LOD8 Len Chair",
+    "Name": "Bánh su kem",
     "price": 300,
-    "image": "image10.png",
-    "category": "kem"
+    "image": "Bánh Nướng/su kem.JPG",
+    "category": "nuong"
   },
   {
     "id": 10,
-    "Name": "LOD9 Love Chair",
+    "Name": "Tart",
     "price": 354,
-    "image": "image11.png",
+    "image": "Bánh Nướng/tart.JPG",
+    "category": "nuong"
+  },
+  
+  {
+    "id": 11,
+    "Name": "Cheesecake",
+    "price": 999,
+    "image": "Bánh lạnh/Cheesecake.JPG",
+    "category": "lanh"
+  },
+  {
+    "id": 12,
+    "Name": "Mosse",
+    "price": 999,
+    "image": "Bánh lạnh/Mosse.JPG",
+    "category": "lanh"
+  },
+  {
+    "id": 13,
+    "Name": "Panna cotta",
+    "price": 999,
+    "image": "Bánh lạnh/Panna cotta.JPG",
+    "category": "lanh"
+  },
+  {
+    "id": 14,
+    "Name": "Red velvet",
+    "price": 999,
+    "image": "Bánh lạnh/Red velvet.JPG",
+    "category": "lanh"
+  },
+  {
+    "id": 15,
+    "Name": "Tiramisu",
+    "price": 999,
+    "image": "Bánh lạnh/Tiramisu.JPG",
+    "category": "lanh"
+  },
+  {
+    "id": 16,
+    "Name": "BlueberryCheesecake",
+    "price": 999,
+    "image": "Bánh lạnh/BlueberryCheesecake .png",
+    "category": "lanh"
+  },
+   {
+    "id": 17,
+    "Name": "MixedFruitCheesecake",
+    "price": 999,
+    "image": "Bánh lạnh/MixedFruitCheesecake.png",
+    "category": "lanh"
+  },
+   {
+    "id": 18,
+    "Name": "StrawberryBlossom",
+    "price": 999,
+    "image": "Bánh lạnh/StrawberryBlossom.png",
+    "category": "lanh"
+  },
+   {
+    "id": 19,
+    "Name": "LycheeRose",
+    "price": 999,
+    "image": "Bánh lạnh/LycheeRose.png",
+    "category": "lanh"
+  },
+  {
+    "id": 20,
+    "Name": "OrangeCream",
+    "price": 999,
+    "image": "Bánh lạnh/OrangeCream.png",
+    "category": "lanh"
+  },
+  
+  {
+    "id": 21,
+    "Name": "Blueberry",
+    "price": 999,
+    "image": "Bánh kem/Blueberry.png",
     "category": "kem"
   },
   {
-    "id": 11,
-    "Name": "LOD10 Lobe Chair",
+    "id": 22,
+    "Name": "Chocolate",
     "price": 999,
-    "image": "image3.png",
+    "image": "Bánh kem/Chocolate.png",
     "category": "kem"
+  },
+  {
+    "id": 23,
+    "Name": "ChocolateDripFruit",
+    "price": 999,
+    "image": "Bánh kem/ChocolateDripFruit.png",
+    "category": "kem"
+  },
+  {
+    "id": 24,
+    "Name": "DubaiChocolate",
+    "price": 999,
+    "image": "Bánh kem/DUBAIChocolate.png",
+    "category": "kem"
+  },
+  {
+    "id": 25,
+    "Name": "Mango",
+    "price": 999,
+    "image": "Bánh kem/Mango.png",
+    "category": "kem"
+  },
+  {
+    "id": 26,
+    "Name": "OMatchaMiSu",
+    "price": 999,
+    "image": "Bánh kem/MatchaMiSu.png",
+    "category": "kem"
+  },
+  {
+    "id": 27,
+    "Name": "NakedBerry",
+    "price": 999,
+    "image": "Bánh kem/NakedBerry.png",
+    "category": "kem"
+  },
+  {
+    "id": 28,
+    "Name": "OrangeNaked",
+    "price": 999,
+    "image": "Bánh kem/OrangeNaked.png",
+    "category": "kem"
+  },
+  {
+    "id": 29,
+    "Name": "Strawberry",
+    "price": 999,
+    "image": "Bánh kem/Strawberry.png",
+    "category": "kem"
+  },
+  {
+    "id": 30,
+    "Name": "PhoMaiBap",
+    "price": 999,
+    "image": "Bánh kem/PhoMaiBap.png",
+    "category": "kem"
+  },
+  
+  {
+    "id": 31,
+    "Name": "BomBom",
+    "price": 999,
+    "image": "Donut/BomBom.png",
+    "category": "Donut"
+  },
+  {
+    "id": 32,
+    "Name": "Burnut",
+    "price": 999,
+    "image": "Donut/Burnut.png",
+    "category": "Donut"
+  },
+  {
+    "id": 33,
+    "Name": "CandyCrushSugar",
+    "price": 999,
+    "image": "Donut/CandyCrushSugar.png",
+    "category": "Donut"
+  },
+  {
+    "id": 34,
+    "Name": "CreamelVanil",
+    "price": 999,
+    "image": "Donut/CreamelVanil.png",
+    "category": "Donut"
+  },
+  {
+    "id": 35,
+    "Name": "CreamNho",
+    "price": 999,
+    "image": "Donut/CreamNho.png",
+    "category": "Donut"
+  },
+   {
+    "id": 36,
+    "Name": "DauDen",
+    "price": 999,
+    "image": "Donut/DauDen.png",
+    "category": "Donut"
+  },
+   {
+    "id": 37,
+    "Name": "Eggy",
+    "price": 999,
+    "image": "Donut/Eggy.png",
+    "category": "Donut"
+  },
+   {
+    "id": 38,
+    "Name": "OrangeJucice",
+    "price": 999,
+    "image": "Donut/OrangeJucice.png",
+    "category": "Donut"
+  },
+   {
+    "id": 39,
+    "Name": "Milk Crackkk",
+    "price": 999,
+    "image": "Donut/Milk Crackkk.png",
+    "category": "Donut"
+  },
+   {
+    "id": 40,
+    "Name": "Mixing",
+    "price": 999,
+    "image": "Donut/Mixing.png",
+    "category": "Donut"
   }
 ]
