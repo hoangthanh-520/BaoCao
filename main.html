@@ -1,148 +1,410 @@
 <html lang="vi">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiệm Bánh Hoàng Tử Bé</title>
-    <link rel="icon" href="icon.png" />
+    <link rel="icon" href="icon.png" /> <!-- Link Font Chu -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css" />
-  </head>
+    <link rel="stylesheet" href="footer.css">
+</head>
 
-  <body>
+<body>
     <header class="top-bar">
-      <div>
-        <a href="#">
-          <img src="TYPO.png" width="300px" alt="Trang Chủ" />
-        </a>
-      </div>
-      <div class="home">
-        <b>TRANG CHỦ</b>
-      </div>
-      <div class="home">
-        <b>SẢN PHẨM</b>
-      </div>
-      <!--Lien he-->
-      <div class="contact">
-        <i class="fa-solid fa-phone end phone"></i>
-        <div class="contact-text">
-          <small>Liên hệ đặt bánh</small>
-          <strong>079.677.890</strong>
+        <div> <a href="#"> <img src="imgs-header/Logo.png" width="250px" alt="Trang Chủ" /> </a></div>
+        <!-- TK -->
+        <div class="home"> <b>TRANG CHỦ</b> </div>
+        <div class="home"> <b>SẢN PHẨM</b> </div>
+        <!--Lien he-->
+        <div class="contact"> <i class="fa-solid fa-phone end phone"></i>
+            <div class="contact-text"> <small>Liên hệ đặt bánh</small> <strong>079.677.890</strong> </div>
         </div>
-      </div>
-      <!--Tim kiem, TK,GH-->
-      <div class="actions">
-        <div>
-          <a href="#">
-            <i class="fa-solid fa-search end icon"></i>
-          </a>
+        <!--Tim kiem, TK,GH-->
+        <div class="actions">
+            <div class="search-box"> <i class="fa-solid fa-search end icon"></i> </div>
+            <div> <a href="login.html"> <i class="bi-solid bi-person end icon"></i> </a> </div>
+            <div> <a href="GH.html"> <i class="fa-solid fa-shopping-cart end icon cart"> <span class="badge">0</span>
+                    </i> </a> </div>
         </div>
-        <div>
-          <a href="login.html">
-            <i class="bi-solid bi-person end icon"></i>
-          </a>
-        </div>
-        <div>
-          <a href="GH.html">
-            <i class="fa-solid fa-shopping-cart end icon cart">
-              <span class="badge">0</span>
-            </i>
-          </a>
-        </div>
-      </div>
     </header>
-    <main></main>
+    <main>
+        <article>
+            <div class="slide-show">
+                <div class="list-img"> <img class="img" src="imgs-header/Cookie.png" alt=""> <img class="img"
+                        src="imgs-header/Croissant .png" alt=""> <img class="img" src="imgs-header/Donuts.png" alt="">
+                    <img class="img" src="imgs-header/Tiramisu .png" alt="">
+                </div>
+                <div class="btns">
+                    <div class="btn-left"> <i class="bi bi-arrow-left-circle btn"></i> </div>
+                    <div class="btn-right"> <i class="bi bi-arrow-right-circle btn"></i> </div>
+                </div>
+                <div class="index-img">
+                    <div class="index-item index-item-0 active"></div>
+                    <div class="index-item index-item-1 "></div>
+                    <div class="index-item index-item-2 "></div>
+                    <div class="index-item index-item-3 "></div>
+                </div>
+            </div>
+            <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+            <div class=" tabs"> <span class="tab active" onclick="setTab(this, 'Banh-nuong')">Bánh Nướng</span> <span
+                    class="tab " onclick="setTab(this, 'Banh-kem')">Bánh Kem</span> <span class="tab "
+                    onclick="setTab(this, 'Banh-lanh')">Bánh Lạnh</span> <span class="tab "
+                    onclick="setTab(this, 'Banh-Donuts')">Bánh Donuts</span> </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" onclick="slide(-1)">&#8249;</button>
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/Baguette.png" alt=""></div>
+                        <p class="product-name">B-001 (Số 0)</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart3"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/Brownie.png" alt=""></div>
+                        <p class="product-name">Bánh Brownie</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/Cookie.png" alt=""></div>
+                        <p class="product-name">Bánh Cookie</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/Croissant.png" alt=""></div>
+                        <p class="product-name">Bánh Croissant</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/cupcake.png" alt=""></div>
+                        <p class="product-name">Bánh Cupcake</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/macaron.png" alt=""></div>
+                        <p class="product-name">Bánh Macaron</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/Muffin.png" alt=""></div>
+                        <p class="product-name">Bánh Muffin</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/scone.png" alt=""></div>
+                        <p class="product-name">Bánh Scone</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/su kem.png" alt=""></div>
+                        <p class="product-name">Bánh Su Kem</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-nuong">
+                        <div class="product-placeholder"><img src="Bánh Nướng/tart.png" alt=""></div>
+                        <p class="product-name">Bánh Tart Trứng</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/Blueberry.png" alt=""></div>
+                        <p class="product-name">Bánh Kem Blueberry</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/Chocolate.png" alt=""></div>
+                        <p class="product-name">Bánh Kem Chocolate</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/ChocolateDripFruit.png" alt=""></div>
+                        <p class="product-name">Bánh Kem ChocolateDripFruit</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/DUBAIChocolate.png" alt=""></div>
+                        <p class="product-name">Bánh Kem DUBAIChocolate</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/Mango.png" alt=""></div>
+                        <p class="product-name">Bánh Kem Mango</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/MatchaMiSu.png" alt=""></div>
+                        <p class="product-name">Bánh Kem MatchaMiSu</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/NakedBerry.png" alt=""></div>
+                        <p class="product-name">Bánh Kem NakedBerry</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/OrangeNaked.png" alt=""></div>
+                        <p class="product-name">Bánh Kem OrangeNaked</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/Oreo.png" alt=""></div>
+                        <p class="product-name">Bánh Kem Oreo</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/PhoMaiBap.png" alt=""></div>
+                        <p class="product-name">Bánh Kem Phô Mai Bắp</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-kem">
+                        <div class="product-placeholder"><img src="Bánh kem/Strawberry.png" alt=""></div>
+                        <p class="product-name">Bánh Kem Strawberry</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/Cheesecake.png" alt=""></div>
+                        <p class="product-name">Bánh Cheesecake</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/Chocolate-PassionMousse.png" alt=""></div>
+                        <p class="product-name">Bánh Chocolate-PassionMousse</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/LemonCheesecake.png" alt=""></div>
+                        <p class="product-name">Bánh LemonCheesecake</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/LycheeRose.png " alt=""></div>
+                        <p class="product-name">Bánh LycheeRose</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/Mosse.png " alt=""></div>
+                        <p class="product-name">Bánh Mosse</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/MousseSocola3Tang.png " alt=""></div>
+                        <p class="product-name">Bánh MousseSocola 3 Tầng</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/OrangeCream.png " alt=""></div>
+                        <p class="product-name">Bánh OrangeCream</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/Panna cotta.png " alt=""></div>
+                        <p class="product-name">Bánh Panna cotta</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/Red velvet.png " alt=""></div>
+                        <p class="product-name">Bánh Red Velvet</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-lanh">
+                        <div class="product-placeholder"><img src="Bánh lạnh/Tiramisu.png " alt=""></div>
+                        <p class="product-name">Bánh Tiramisu</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/BomBom.png" alt=""></div>
+                        <p class="product-name">Bánh Donut BomBom</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/Burnut.png" alt=""></div>
+                        <p class="product-name">Bánh Donut Burnut</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/CandyCrushSugar.png" alt=""></div>
+                        <p class="product-name">Bánh Donut CandyCrushSugar</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/CreamelVanil.png" alt=""></div>
+                        <p class="product-name">Bánh Donut CreamelVanil</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/CreamNho.png" alt=""></div>
+                        <p class="product-name">Bánh Donut Cream Nho</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/DauDen.png" alt=""></div>
+                        <p class="product-name">Bánh Donut Dâu Đen</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/Eggy.png" alt=""></div>
+                        <p class="product-name">Bánh Donut Eggy</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/MatchaDau.png" alt=""></div>
+                        <p class="product-name">Bánh Donut Matcha Dâu</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/Milk Crackkk.png" alt=""></div>
+                        <p class="product-name">Bánh Donut Milk Crackkk</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/Mixing.png" alt=""></div>
+                        <p class="product-name">Bánh Donut Mixing</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/OrangeJucice.png" alt=""></div>
+                        <p class="product-name">Bánh Donut OrangeJucice</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                    <div class="product-card" data-category="Banh-Donuts">
+                        <div class="product-placeholder"><img src="Bánh Donuts/Pocky.png" alt=""></div>
+                        <p class="product-name">Bánh Donut Pocky</p>
+                        <p class="product-price">Liên hệ</p> <button class="btn-detail"> <i class="bi bi-cart"></i> Xem
+                            chi tiết </button>
+                    </div>
+                </div> <button class="carousel-btn next" onclick="slide(1)">&#8250;</button>
+
+
+            </div>
+            <div class="all"> <a href="GH.html">Xem Tất Cả Các Sản Phẩm</a> </div>
+        </article>
+    </main>
     <footer class="footer">
-      <div class="grid">
-      
-        <div class="grid__row">
-            <!-- Logo -->
-            <div class="grid__column-2-4">
-                <img src="TYPO.png" alt="Logo" class="footer__logo">
+        <div class="grid">
+
+            <div class="grid__row">
+                <!-- Logo -->
+                <div class="grid__column-2-4">
+                    <img src="imgs-header/Logo.png" alt="Logo" class="footer__logo">
+                </div>
+                <div class="grid__column-4">
+                    <h3 class="footer__heading">Danh mục</h3>
+                    <ul class="footer__list">
+                        <li class="footer_item">
+                            <a href="" class="footer_item_link">Sản phẩm khuyến mãi</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_item_link">Sản phẩm nổi bật</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_item_link">Sản phẩm mới</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_item_link">Tất cả sản phẩm</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid__column-4">
+                    <h3 class="footer__heading">Theo dõi</h3>
+                    <ul class="footer__list">
+                        <li class="footer_item">
+                            <a href="https://www.facebook.com/?locale=vi_VN" class="footer_item_link">
+
+                                <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer_item_link">
+                        </li>
+                        <li class="footer_item">
+                            <i class="footer-item__icon fa-brands fa-square-instagram"></i>
+                            Instagram
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="https://www.youtube.com/" class="footer_item_link">
+                                <i class="footer-item__icon fa-brands fa-youtube"></i>
+                                YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-4">
+                    <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                    <ul class="footer__list">
+                        <li class="footer_item">
+                            <a href="" class="footer_item_link">Trung tâm trợ giúp</a>
+                        </li>
+
+                        <li class="footer_item">
+                            <a href="" class="footer_item_link">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2Femail%3Fpli%3D1&dsh=S-552649314%3A1772259722069136&followup=https%3A%2F%2Fmyaccount.google.com%2Femail%3Fpli%3D1&ifkv=ASfE1-raaS0TJnx2IRtJngm8zv8toD89rtn0BUmLMGFAkycloEs-F8SynfwC1b7_-FDpvqd4Yeki&osid=1&passive=1209600&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                class="footer_item_link">
+                                <i class="footer-item__icon fa-solid fa-envelope"></i>
+                                hoangtubebakery@gmail.com</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_item_link">
+                                <i class="footer-item__icon fa-solid fa-phone"></i>
+                                079.677.890
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid__row">
+                <p class="footer_text">© All Right Reserved / Bản quyền thuộc về Hoang Tu Be Bakery.</p>
             </div>
 
-         
-            
-         
-        
-          <div class="grid__column-4">
-            <h3 class="footer__heading">Danh mục</h3>
-               <ul class="footer__list">
-              <li class="footer_item">
-                <a href="" class="footer_item_link">Sản phẩm khuyến mãi</a>
-              </li>
-              <li class="footer_item">
-                <a href="" class="footer_item_link">Sản phẩm nổi bật</a>
-                 </li>
-              <li class="footer_item">
-                <a href="" class="footer_item_link">Sản phẩm mới</a>
-              </li>
-                <li class="footer_item">
-                <a href="" class="footer_item_link">Tất cả sản phẩm</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="grid__column-4">
-            <h3 class="footer__heading">Theo dõi</h3>
-             <ul class="footer__list">
-              <li class="footer_item">
-                <a href="https://www.facebook.com/?locale=vi_VN" class="footer_item_link">
-              
-                  <i class="footer-item__icon fa-brands fa-facebook"></i>
-                  Facebook
-                </a>
-                <a href="https://www.instagram.com/" class="footer_item_link">
-                   </li>
-              <li class="footer_item">
-                 <i class="footer-item__icon fa-brands fa-square-instagram"></i>
-                  Instagram
-                </a>
-                </li>
-              <li class="footer_item">
-                <a href="https://www.youtube.com/" class="footer_item_link">
-                  <i class="footer-item__icon fa-brands fa-youtube"></i>
-                  YouTube
-                </a>
-              </li>
-            </ul>
-          </div>
-           <div class="grid__column-4">
-            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-            <ul class="footer__list">
-              <li class="footer_item">
-                <a href="" class="footer_item_link">Trung tâm trợ giúp</a>
-                 </li>
-              
-              <li class="footer_item">
-                <a href="" class="footer_item_link">Hướng dẫn mua hàng</a>
-              </li>
-              <li class="footer_item">
-                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2Femail%3Fpli%3D1&dsh=S-552649314%3A1772259722069136&followup=https%3A%2F%2Fmyaccount.google.com%2Femail%3Fpli%3D1&ifkv=ASfE1-raaS0TJnx2IRtJngm8zv8toD89rtn0BUmLMGFAkycloEs-F8SynfwC1b7_-FDpvqd4Yeki&osid=1&passive=1209600&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="footer_item_link">
-                  <i class="footer-item__icon fa-solid fa-envelope"></i>
-                  hoangtubebakery@gmail.com</a>
-                 </li>
-                 <li class="footer_item">
-                <a href="" class="footer_item_link">
-                  <i class="footer-item__icon fa-solid fa-phone"></i>
-                  079.677.890
-                </a>
-                 </li>
-            </ul>
-          </div>
         </div>
-        <div class="grid__row">
-          <p class="footer_text">© All Right Reserved / Bản quyền thuộc về Hoang Tu Be Bakery.</p>
-        </div>
-
-      </div>
     </footer>
-  </body>
+    <script src="main.js"></script>
+</body>
+
 </html>
