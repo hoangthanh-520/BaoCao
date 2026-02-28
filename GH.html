@@ -38,6 +38,7 @@
       <div>
         <a href="#">
           <i class="fa-solid fa-search end icon"></i>
+        
         </a>
       </div>
       <div>
@@ -45,28 +46,35 @@
           <i class="bi-solid bi-person end icon"></i>
         </a>
       </div>
-      <div>
+      <!-- <div>
         <a href="GH.html">
           <i class="fa-solid fa-shopping-cart end icon cart">
             <span class="badge">0</span>
           </i>
         </a>
-      </div>
+      </div> -->
+      <div class="icon-cart">
+        <i class="fa-solid fa-shopping-cart end icon cart"></i>
+     <span class="badge">0</span>
     </div>
-    <div class="icon-cart">
-      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+    
+      <!-- <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
         width="24" height="24" fill="none" viewBox="0 0 24 24">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
-      </svg>
-      <span>0</span>
+      </svg> -->
+      <!-- <i class="fa-solid fa-shopping-cart end icon cart"></i>
+     <span class="badge">0</span> -->
     </div>
+   
   </header>
   <div class="categoryFilter">
     <button data-type="all">Tất cả</button>
     <button data-type="nuong">Bánh Nướng</button>
     <button data-type="kem">Bánh Kem</button>
     <button data-type="lanh">Bánh Lạnh</button>
+     <button data-type="Donut">Bánh Donut</button>
+
   </div>
   <div class="listProduct">
     <div class="item">
@@ -82,6 +90,10 @@
     <h1>Shopping Cart</h1>
     <div class="listCart"></div>
     <div class="item"></div>
+    <div class="cartSummary">
+  <div class="summaryLeft">Total: 0$</div>
+  <div class="summaryRight">0 items</div>
+</div>
     <div class="btn">
       <button class="close">CLOSE</button>
       <button class="checkOut">CHECK OUT</button>

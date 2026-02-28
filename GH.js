@@ -12,6 +12,7 @@ let carts = [];
 iconCart.addEventListener("click", () => {
   body.classList.toggle("showCart");
 });
+
 closeCart.addEventListener("click", () => {
   body.classList.toggle("showCart");
 });
@@ -75,30 +76,47 @@ const addCartToMemory = () => {
 const addCartToHTML = () => {
   listCartHTML.innerHTML = "";
   let totalQuantity = 0;
+  let totalPriceAll = 0;
+
   if (carts.length > 0) {
     carts.forEach((cart) => {
-      totalQuantity = totalQuantity + cart.quantity;
-      let newCart = document.createElement("div");
-      newCart.classList.add("item");
-      newCart.dataset.id = cart.product_id;
+      totalQuantity += cart.quantity;
+
       let positionProduct = listProducts.findIndex(
         (value) => value.id == cart.product_id,
       );
-      let info = listProducts[positionProduct];
-      newCart.innerHTML = `
-        <div class="image"><img src="${info.image}" alt=""> </div>
+
+      if (positionProduct >= 0) {
+        let info = listProducts[positionProduct];
+        totalPriceAll += info.price * cart.quantity;
+
+        let newCart = document.createElement("div");
+        newCart.classList.add("item");
+        newCart.dataset.id = cart.product_id;
+
+        newCart.innerHTML = `
+          <div class="image"><img src="${info.image}" alt=""></div>
           <div class="name">${info.Name}</div>
-          <div class="totalPrice">${info.price * cart.quantity}</div>
+          <div class="totalPrice">${info.price * cart.quantity}$</div>
           <div class="quantity">
             <span class="minus"><</span>
             <span>${cart.quantity}</span>
             <span class="plus">></span> 
           </div>
-      `;
-      listCartHTML.appendChild(newCart);
+        `;
+
+        listCartHTML.appendChild(newCart);
+      }
     });
   }
+
   iconCartSpan.innerText = totalQuantity;
+
+  // CẬP NHẬT THANH SUMMARY
+  document.querySelector(".summaryLeft").innerText =
+    "Total: " + totalPriceAll + "$";
+
+  document.querySelector(".summaryRight").innerText = totalQuantity + " items";
 };
 listCartHTML.addEventListener("click", (event) => {
   let positionClick = event.target;
@@ -167,3 +185,56 @@ filterButtons.forEach((button) => {
     addDataToHTML();
   });
 });
+let checkOutBtn = document.querySelector(".checkOut");
+
+checkOutBtn.addEventListener("click", () => {
+  if (carts.length === 0) {
+    alert("Giỏ hàng đang trống!");
+    return;
+  }
+
+  showCheckoutForm();
+});
+const showCheckoutForm = () => {
+  let checkoutHTML = `
+    <div class="checkoutOverlay">
+      <div class="checkoutBox">
+        <h2>Thanh toán đơn hàng</h2>
+        <input type="text" id="customerName" placeholder="Họ và tên">
+        <input type="text" id="customerPhone" placeholder="Số điện thoại">
+        <input type="text" id="customerAddress" placeholder="Địa chỉ">
+        <button id="confirmOrder">Xác nhận</button>
+        <button id="cancelOrder">Hủy</button>
+      </div>
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML("beforeend", checkoutHTML);
+
+  document
+    .getElementById("confirmOrder")
+    .addEventListener("click", confirmOrder);
+
+  document.getElementById("cancelOrder").addEventListener("click", () => {
+    document.querySelector(".checkoutOverlay").remove();
+  });
+};
+const confirmOrder = () => {
+  let name = document.getElementById("customerName").value;
+  let phone = document.getElementById("customerPhone").value;
+  let address = document.getElementById("customerAddress").value;
+
+  if (name === "" || phone === "" || address === "") {
+    alert("Vui lòng nhập đầy đủ thông tin!");
+    return;
+  }
+
+  alert("Đặt hàng thành công! 🎉");
+
+  // Xóa giỏ hàng
+  carts = [];
+  localStorage.removeItem("cart");
+  addCartToHTML();
+
+  document.querySelector(".checkoutOverlay").remove();
+};

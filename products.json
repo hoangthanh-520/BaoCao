@@ -17,92 +17,92 @@
     "id": 3,
     "Name": "Cookie",
     "price": 236,
-    "image": "Bánh Nướng/Cookie.png",
+    "image": "Bánh Nướng/Cookie.PNG",
     "category": "nuong"
   },
   {
     "id": 4,
     "Name": "Croissant",
     "price": 218,
-    "image": "Bánh Nướng/Croissant.png",
+    "image": "Bánh Nướng/Croissant.PNG",
     "category": "nuong"
   },
   {
     "id": 5,
     "Name": "Cupcake",
     "price": 283,
-    "image": "Bánh Nướng/cupcake.png",
+    "image": "Bánh Nướng/cupcake.PNG",
     "category": "nuong"
   },
   {
     "id": 6,
     "Name": "Macaron",
     "price": 267,
-    "image": "Bánh Nướng/macaron.png",
+    "image": "Bánh Nướng/macaron.PNG",
     "category": "nuong"
   },
   {
     "id": 7,
     "Name": "Muffin",
     "price": 272,
-    "image": "Bánh Nướng/Muffin.png",
+    "image": "Bánh Nướng/Muffin.PNG",
     "category": "nuong"
   },
   {
     "id": 8,
     "Name": "Scone",
     "price": 290,
-    "image": "Bánh Nướng/scone.png",
+    "image": "Bánh Nướng/scone.PNG",
     "category": "nuong"
   },
   {
     "id": 9,
     "Name": "Bánh su kem",
     "price": 300,
-    "image": "Bánh Nướng/su kem.png",
+    "image": "Bánh Nướng/su kem.PNG",
     "category": "nuong"
   },
   {
     "id": 10,
     "Name": "Tart",
     "price": 354,
-    "image": "Bánh Nướng/tart.png",
+    "image": "Bánh Nướng/tart.PNG",
     "category": "nuong"
   },
-  
+
   {
     "id": 11,
     "Name": "Cheesecake",
     "price": 999,
-    "image": "Bánh lạnh/Cheesecake.JPG",
+    "image": "Bánh lạnh/Cheesecake.PNG",
     "category": "lanh"
   },
   {
     "id": 12,
     "Name": "Mosse",
     "price": 999,
-    "image": "Bánh lạnh/Mosse.JPG",
+    "image": "Bánh lạnh/Mosse.PNG",
     "category": "lanh"
   },
   {
     "id": 13,
     "Name": "Panna cotta",
     "price": 999,
-    "image": "Bánh lạnh/Panna cotta.JPG",
+    "image": "Bánh lạnh/Panna cotta.PNG",
     "category": "lanh"
   },
   {
     "id": 14,
     "Name": "Red velvet",
     "price": 999,
-    "image": "Bánh lạnh/Red velvet.JPG",
+    "image": "Bánh lạnh/Red velvet.PNG",
     "category": "lanh"
   },
   {
     "id": 15,
     "Name": "Tiramisu",
     "price": 999,
-    "image": "Bánh lạnh/Tiramisu.JPG",
+    "image": "Bánh lạnh/Tiramisu.PNG",
     "category": "lanh"
   },
   {
@@ -112,21 +112,21 @@
     "image": "Bánh lạnh/BlueberryCheesecake .png",
     "category": "lanh"
   },
-   {
+  {
     "id": 17,
     "Name": "MixedFruitCheesecake",
     "price": 999,
     "image": "Bánh lạnh/MixedFruitCheesecake.png",
     "category": "lanh"
   },
-   {
+  {
     "id": 18,
     "Name": "StrawberryBlossom",
     "price": 999,
     "image": "Bánh lạnh/StrawberryBlossom.png",
     "category": "lanh"
   },
-   {
+  {
     "id": 19,
     "Name": "LycheeRose",
     "price": 999,
@@ -140,7 +140,7 @@
     "image": "Bánh lạnh/OrangeCream.png",
     "category": "lanh"
   },
-  
+
   {
     "id": 21,
     "Name": "Blueberry",
@@ -211,7 +211,7 @@
     "image": "Bánh kem/PhoMaiBap.png",
     "category": "kem"
   },
-  
+
   {
     "id": 31,
     "Name": "BomBom",
@@ -247,35 +247,35 @@
     "image": "Donut/CreamNho.png",
     "category": "Donut"
   },
-   {
+  {
     "id": 36,
     "Name": "DauDen",
     "price": 999,
     "image": "Donut/DauDen.png",
     "category": "Donut"
   },
-   {
+  {
     "id": 37,
     "Name": "Eggy",
     "price": 999,
     "image": "Donut/Eggy.png",
     "category": "Donut"
   },
-   {
+  {
     "id": 38,
     "Name": "OrangeJucice",
     "price": 999,
     "image": "Donut/OrangeJucice.png",
     "category": "Donut"
   },
-   {
+  {
     "id": 39,
     "Name": "Milk Crackkk",
     "price": 999,
     "image": "Donut/Milk Crackkk.png",
     "category": "Donut"
   },
-   {
+  {
     "id": 40,
     "Name": "Mixing",
     "price": 999,
