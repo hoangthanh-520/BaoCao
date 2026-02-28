@@ -21,6 +21,8 @@ body {
 .home {
   color: #150909;
   position: relative;
+  font-size: 25px;
+  font-family: "Be VietNam Pro", sans-serif;
 }
 .home:hover {
   text-decoration: none;
