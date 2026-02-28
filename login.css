@@ -1,24 +1,23 @@
-
 body {
   background: #f6f5f7;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("image2.png"); /* ← đổi tên ảnh ở đây */
+  background-image: url("longinBackground.png"); /* ← đổi tên ảnh ở đây */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.home{
+.home {
   text-decoration: none;
   color: #150909;
-  position: relative; 
+  position: relative;
 }
-.home:hover{
+.home:hover {
   text-decoration: none;
   color: rgb(231, 93, 38);
 }
 .home::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -72,7 +71,7 @@ body {
 .form-container button {
   margin-top: 10px;
   padding: 10px;
-  background: #512da8;
+  background: #dad8de;
   color: #150909;
   border: none;
   cursor: pointer;
@@ -116,15 +115,15 @@ body {
 }
 #register {
   border-radius: 5px;
-  background-color: aqua;
+  background-color: rgb(239, 245, 245);
 }
 #Login {
   border-radius: 5px;
-  background-color: aqua;
+  background-color: rgb(234, 235, 241);
 }
 
 .toggle {
-  background: linear-gradient(to right, #5c6bc0, #512da8);
+  background: linear-gradient(to right, #a6add4, #ca7a1e);
   color: #f4f4f4;
   position: relative;
   left: -100%;
