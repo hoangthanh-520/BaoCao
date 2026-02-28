@@ -3,70 +3,70 @@
     "id": 1,
     "Name": "Baguette",
     "price": 200,
-    "image": "Bánh Nướng/Baguette.JPG",
+    "image": "Bánh Nướng/Baguette.png",
     "category": "nuong"
   },
   {
     "id": 2,
     "Name": "Brownie",
     "price": 229,
-    "image": "Bánh Nướng/Brownie.JPG",
+    "image": "Bánh Nướng/Brownie.png",
     "category": "nuong"
   },
   {
     "id": 3,
     "Name": "Cookie",
     "price": 236,
-    "image": "Bánh Nướng/Cookie.JPG",
+    "image": "Bánh Nướng/Cookie.png",
     "category": "nuong"
   },
   {
     "id": 4,
     "Name": "Croissant",
     "price": 218,
-    "image": "Bánh Nướng/Croissant.JPG",
+    "image": "Bánh Nướng/Croissant.png",
     "category": "nuong"
   },
   {
     "id": 5,
     "Name": "Cupcake",
     "price": 283,
-    "image": "Bánh Nướng/cupcake.JPG",
+    "image": "Bánh Nướng/cupcake.png",
     "category": "nuong"
   },
   {
     "id": 6,
     "Name": "Macaron",
     "price": 267,
-    "image": "Bánh Nướng/macaron.JPG",
+    "image": "Bánh Nướng/macaron.png",
     "category": "nuong"
   },
   {
     "id": 7,
     "Name": "Muffin",
     "price": 272,
-    "image": "Bánh Nướng/Muffin.JPG",
+    "image": "Bánh Nướng/Muffin.png",
     "category": "nuong"
   },
   {
     "id": 8,
     "Name": "Scone",
     "price": 290,
-    "image": "Bánh Nướng/scone.JPG",
+    "image": "Bánh Nướng/scone.png",
     "category": "nuong"
   },
   {
     "id": 9,
     "Name": "Bánh su kem",
     "price": 300,
-    "image": "Bánh Nướng/su kem.JPG",
+    "image": "Bánh Nướng/su kem.png",
     "category": "nuong"
   },
   {
     "id": 10,
     "Name": "Tart",
     "price": 354,
-    "image": "Bánh Nướng/tart.JPG",
+    "image": "Bánh Nướng/tart.png",
     "category": "nuong"
   },
   
