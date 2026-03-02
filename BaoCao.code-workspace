@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../testweb"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "BaoCao",
+    "liveServer.settings.port": 5501
+  }
+}

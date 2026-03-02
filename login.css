@@ -2,11 +2,7 @@ body {
   background: #f6f5f7;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
-  background-image: url("Brown And Beige Modern Bakery Sale Instagram Post (1204 x 678 px).png"); /* ← đổi tên ảnh ở đây */
-=======
   background-image: url("longinBackground.png"); /* ← đổi tên ảnh ở đây */
->>>>>>> bb644da884846e961f311c9e4a2ae32c1d762b4a
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -216,4 +212,97 @@ body {
   width: 100%;
   min-height: calc(100vh - 80px); /* trừ header */
   padding-right: 0; /* sát mép */
+}
+/*footer*/
+.footer {
+  padding-top: 16px;
+  border-top: 4px solid var(--primary-color);
+  background-color: #c5c5c5;
+}
+
+.footer__heading {
+  font-size: 1.3rem;
+  text-transform: none;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.footer__logo {
+  width: 400px;
+  height: auto;
+  margin-left: -150px;
+  padding-right: 60px;
+}
+.footer__list {
+  padding-left: 5px;
+  list-style: none;
+  font-size: 0.8rem;
+}
+.footer_item {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  padding-right: 15px;
+}
+.footer_item_link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #737373;
+  padding: 2px 0;
+  display: block;
+}
+.footer_item_link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #737373;
+  padding: 2px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer_item_link:hover {
+  color: var(--main-color);
+}
+
+.footer-item__icon {
+  font-size: 1.6rem;
+  margin: -1px 8px -1px 0;
+}
+.footer_text {
+  font-size: 1rem;
+  margin-left: 300px;
+}
+/*responsive*/
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+/* Test */
+.grid__column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid__column-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+  margin-top: 10px;
+  margin-bot: 10px;
+  margin-right: 50px;
+}
+.grid__column-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3334%;
 }
