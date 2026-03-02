@@ -63,6 +63,11 @@
     margin: -7px 7px -1px 0;
     color: rgb(209, 10, 172);
 }
+.footer-item__icon-contact {
+    font-size: 1.6rem;
+    margin: -1px 8px -5px 0;
+    color: #737373;
+}
 .footer_text {
     font-size: 0.7rem;
     margin-left: 30px;
