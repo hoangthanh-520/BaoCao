@@ -78,6 +78,7 @@ body {
   align-items: center;
   padding: 12px 24px;
   background: lightblue;
+  background-image: url(imgs-header/back-header.png);
 }
 /*Trang chu*/
 .home {

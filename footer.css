@@ -6,8 +6,8 @@
 }
 
 .footer__heading {
-  font-size: 1.3rem;
-  text-transform: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
   color: var(--primary-color);
   margin-bottom: 10px;
 }
@@ -54,7 +54,46 @@
 .footer_text {
   font-size: 1rem;
   margin-left: 300px;
+
+  text-decoration: none;
+  font-size: 1rem;
+  color: #737373;
+  padding: 2px 0;
+  display: flex;
+  align-items: center;
 }
+
+.footer_item_link:hover {
+  color: brown;
+}
+
+.footer-item__icon-yt {
+  font-size: 1.6rem;
+  margin: 1px 8px -1px -2px;
+  color: red;
+}
+.footer-item__icon-fb {
+  font-size: 1.6rem;
+  margin: -1px 8px -1px 0;
+  color: blue;
+}
+.footer-item__icon-ig {
+  font-size: 1.6rem;
+  margin: -7px 7px -1px 0;
+  color: rgb(209, 10, 172);
+}
+.footer-item__icon-contact {
+  font-size: 1.35rem;
+  margin: -1px 8px -5px 0;
+  color: rgb(14, 147, 213);
+}
+.footer_text {
+  font-size: 0.7rem;
+  margin-left: 30px;
+  color: aliceblue;
+  text-align: center;
+}
+
 /*responsive*/
 .grid {
   width: 1200px;
@@ -90,4 +129,12 @@
   padding-left: 5px;
   padding-right: 5px;
   width: 83.3334%;
+}
+.grid__row-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(242, 150, 37);
 }

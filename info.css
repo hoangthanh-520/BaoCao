@@ -1,0 +1,106 @@
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 1200px;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        /* PRODUCT */
+        .product {
+            display: flex;
+            gap: 40px;
+        }
+
+        /* IMAGE */
+        .product-image img {
+            max-width: 500px;
+            height: auto;
+            border-radius: 20%;
+        }
+
+        /* PRODUCT INFO */
+        .product-info h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .sku {
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            color: red;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        /* QUANTITY */
+        .quantity {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .quantity button {
+            width: 35px;
+            height: 35px;
+            border: none;
+            background: #eee;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .quantity input {
+            width: 50px;
+            height: 35px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* NOTE */
+        .note {
+            margin-bottom: 20px;
+        }
+
+        .note input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* ADD CART */
+        .add-cart {
+            width: 100%;
+            padding: 15px;
+            background: #a0522d;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .add-cart:hover {
+            background: #8b4513;
+        }
+
+        /* DESCRIPTION */
+        .description {
+            margin-top: 40px;
+            line-height: 1.7;
+        }
+
+        .description-title {
+            color: #a0522d;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
