@@ -1,24 +1,24 @@
+// ===== SLIDESHOW =====
 const listImg = document.querySelector('.list-img');
 const imgs = document.getElementsByClassName('img');
 const btnLeft = document.querySelector('.btn-left');
 const btnRight = document.querySelector('.btn-right');
 const length = imgs.length;
-let current = 0;
+let currentSlide = 0; // ← đổi từ current thành currentSlide
 
 const handleChangeSlide = () => {
-    if (current == length - 1) {
-        current = 0;
+    if (currentSlide == length - 1) {
+        currentSlide = 0;
         let width = imgs[0].offsetWidth;
         listImg.style.transform = `translateX(0px)`;
-        document.querySelector('.active').classList.remove('active');
-        document.querySelector('.index-item-' + current).classList.add('active');
-
+        document.querySelector('.index-item.active').classList.remove('active'); // ← thêm .index-item
+        document.querySelector('.index-item-' + currentSlide).classList.add('active');
     } else {
-        current++;
+        currentSlide++;
         let width = imgs[0].offsetWidth;
-        listImg.style.transform = `translateX(${width * -1 * current}px)`;
-        document.querySelector('.active').classList.remove('active');
-        document.querySelector('.index-item-' + current).classList.add('active');
+        listImg.style.transform = `translateX(${width * -1 * currentSlide}px)`;
+        document.querySelector('.index-item.active').classList.remove('active'); // ← thêm .index-item
+        document.querySelector('.index-item-' + currentSlide).classList.add('active');
     }
 };
 let handleEventChangeSlide = setInterval(handleChangeSlide, 4000);
@@ -27,27 +27,28 @@ btnRight.addEventListener('click', () => {
     clearInterval(handleEventChangeSlide);
     handleChangeSlide();
     handleEventChangeSlide = setInterval(handleChangeSlide, 4000);
-})
+});
 
 btnLeft.addEventListener('click', () => {
     clearInterval(handleEventChangeSlide);
-    if (current == 0) {
-        current = length - 1;
+    if (currentSlide == 0) {
+        currentSlide = length - 1;
         let width = imgs[0].offsetWidth;
-        listImg.style.transform = `translateX(${width * -1 * current}px)`;
-        document.querySelector('.active').classList.remove('active');
-        document.querySelector('.index-item-' + current).classList.add('active');
+        listImg.style.transform = `translateX(${width * -1 * currentSlide}px)`;
+        document.querySelector('.index-item.active').classList.remove('active'); // ← thêm .index-item
+        document.querySelector('.index-item-' + currentSlide).classList.add('active');
     } else {
-        current--;
+        currentSlide--;
         let width = imgs[0].offsetWidth;
-        listImg.style.transform = `translateX(${width * -1 * current}px)`;
-        document.querySelector('.active').classList.remove('active');
-        document.querySelector('.index-item-' + current).classList.add('active');
+        listImg.style.transform = `translateX(${width * -1 * currentSlide}px)`;
+        document.querySelector('.index-item.active').classList.remove('active'); // ← thêm .index-item
+        document.querySelector('.index-item-' + currentSlide).classList.add('active');
     }
     handleEventChangeSlide = setInterval(handleChangeSlide, 4000);
-})
+});
 
 
+// ===== CAROUSEL =====
 let currentIndex = 0;
 
 function getVisibleCount() {
@@ -66,12 +67,10 @@ function getVisibleCards() {
 function slide(dir) {
     const track = document.getElementById('carouselTrack');
     const cards = getVisibleCards();
-
     const visible = getVisibleCount();
     const maxIndex = Math.max(0, cards.length - visible);
 
     currentIndex += dir;
-
     if (currentIndex < 0) currentIndex = 0;
     if (currentIndex > maxIndex) currentIndex = maxIndex;
 
@@ -82,7 +81,6 @@ function slide(dir) {
 }
 
 function setTab(el, category) {
-
     document.querySelectorAll('.tab')
         .forEach(t => t.classList.remove('active'));
     el.classList.add('active');
@@ -91,20 +89,22 @@ function setTab(el, category) {
     const cards = track.querySelectorAll('.product-card');
 
     cards.forEach(card => {
-        if (card.dataset.category === category) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
+        card.style.display = card.dataset.category === category ? "" : "none";
     });
 
     currentIndex = 0;
     track.style.transform = "translateX(0)";
 }
 
-/* Reset khi resize */
 window.addEventListener('resize', () => {
     currentIndex = 0;
-    document.getElementById('carouselTrack')
-        .style.transform = 'translateX(0)';
+    document.getElementById('carouselTrack').style.transform = 'translateX(0)';
 });
+
+
+// ===== SEARCH =====
+let Search = document.querySelector('.search-dropdown');
+
+document.querySelector('#search').onclick = () => {
+    Search.classList.toggle('active');
+}
