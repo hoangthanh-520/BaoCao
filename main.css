@@ -24,6 +24,7 @@ body {
 
 .box-menu ul li {
   width: 210px;
+  width: 230px;
   margin: 25px;
   padding: 15px;
   font-size: 25px;
@@ -79,7 +80,12 @@ body {
   padding: 12px 24px;
   background: lightblue;
   background-image: url(imgs-header/back-header.png);
+  background-image: url(imgs-header/back-header.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 70px;
 }
+
 /*Trang chu*/
 .home {
   color: #150909;
@@ -230,6 +236,9 @@ a {
 }
 
 .search-dropdown.active {
+  display: block;
+}
+.search-dropdown {
   display: block;
 }
 .search-dropdown {
@@ -428,7 +437,6 @@ a {
 .btn:hover {
   color: white;
 }
-
 /* Nut duoi Slide */
 .index-img {
   position: absolute;
@@ -541,11 +549,173 @@ a {
   padding-right: 5px;
   width: 20%;
   margin-top: 10px;
-  margin-bot: 10px;
+  margin-bottom: 10px;
   margin-right: 50px;
 }
 .grid__column-10 {
   padding-left: 5px;
   padding-right: 5px;
   width: 83.3334%;
+}
+/* Khuyến mãi */
+.cta-banner {
+  position: relative;
+  background: linear-gradient(135deg, #7b1e1e 0%, #c0392b 45%, #e8724a 100%);
+  border-radius: 24px;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 60px 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.cta-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.cta-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.cta-title span {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffe08a;
+  display: block;
+}
+
+.cta-sub {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-btn.primary {
+  background: #ffe08a;
+  color: #7b1e1e;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn.primary:hover {
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.cta-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+/* Deco circles */
+.cta-deco {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.deco-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.c1 {
+  width: 300px;
+  height: 300px;
+  top: -80px;
+  right: -60px;
+}
+.c2 {
+  width: 180px;
+  height: 180px;
+  bottom: -40px;
+  right: 200px;
+  background: rgba(255, 255, 255, 0.04);
+}
+.c3 {
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  right: 280px;
+  background: rgba(255, 224, 138, 0.1);
+}
+
+.deco-emoji {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.25;
+  animation: float 4s ease-in-out infinite;
+}
+
+.e1 {
+  top: 15%;
+  right: 18%;
+  animation-delay: 0s;
+}
+.e2 {
+  top: 50%;
+  right: 8%;
+  animation-delay: 1.3s;
+}
+.e3 {
+  bottom: 15%;
+  right: 22%;
+  animation-delay: 2.6s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }

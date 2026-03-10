@@ -108,3 +108,18 @@ let Search = document.querySelector('.search-dropdown');
 document.querySelector('#search').onclick = () => {
     Search.classList.toggle('active');
 }
+
+// Đồng bộ badge giỏ hàng từ localStorage
+const updateCartBadge = () => {
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const badge = document.querySelector(".icon-cart .badge, .icon-cart span, .cart .badge");
+    if (badge) badge.innerText = totalQuantity;
+};
+
+updateCartBadge();
+
+// Cập nhật lại khi tab được focus (người dùng quay lại từ trang sản phẩm)
+window.addEventListener("focus", updateCartBadge);
+window.addEventListener("storage", updateCartBadge);
+
