@@ -51,7 +51,7 @@
         </a>
       </div>
       <div>
-        <a href="GH.html">
+        <a href="GH.html">5
           <i class="fa-solid fa-shopping-cart end icon cart">
             <span class="badge">0</span>
           </i>
@@ -60,6 +60,7 @@
     </div>
   </header>
   <main>
+    <div class="login-wrapper">
     <div class="container" id="container">
       <!-- FORM ĐĂNG KÝ -->
       <div class="form-container sign-up">
@@ -76,8 +77,11 @@
           </div>
           <span>or use your email for registeration</span>
           <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input id="uname" type="email" placeholder="Nhập email"
+								       name="uname" required
+								       pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
+          <input id="psw" type="password" placeholder="Nhập mật khẩu"
+								       name="psw" required minlength="8">
           <button>Sign Up</button></form>
       </div>
 
@@ -96,8 +100,11 @@
             ></a>
           </div>
           <span>or use your email password</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input id="uname" type="email" placeholder="Nhập email"
+								       name="uname" required
+								       pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
+          <input id="psw" type="password" placeholder="Nhập mật khẩu"
+								       name="psw" required minlength="8">
           <a href="#">Forget Your Password?</a>
           <button>Sign In</button>
         </form>
@@ -119,12 +126,10 @@
           </div>
         </div>
       </div>
-    </div>
- 
-  <!-- FOOTER TRỐNG -->
-
+    </div><!-- end container -->
+    </div><!-- end login-wrapper -->
+  </main>
   <script src="login.js"></script>
-  </main> 
   <footer class="footer">
       <div class="grid">
       
@@ -190,7 +195,7 @@
               <li class="footer_item">
                 <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2Femail%3Fpli%3D1&dsh=S-552649314%3A1772259722069136&followup=https%3A%2F%2Fmyaccount.google.com%2Femail%3Fpli%3D1&ifkv=ASfE1-raaS0TJnx2IRtJngm8zv8toD89rtn0BUmLMGFAkycloEs-F8SynfwC1b7_-FDpvqd4Yeki&osid=1&passive=1209600&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="footer_item_link">
                   <i class="footer-item__icon fa-solid fa-envelope"></i>
-                  hoangtubebakery@gmail.com</a>
+                  <span class="__cf_email__" data-cfemail="afc7c0cec1c8dbdacdcacdcec4caddd6efc8c2cec6c381ccc0c2">[email&#160;protected]</span></a>
                  </li>
                  <li class="footer_item">
                 <a href="" class="footer_item_link">
@@ -202,11 +207,4 @@
           </div>
         </div>
         <div class="grid__row">
-          <p class="footer_text">© All Right Reserved / Bản quyền thuộc về Hoang Tu Be Bakery.</p>
-        </div>
-
-      </div>
-    </footer>
-</body>
-
-</html>
+          <p class="footer_text">© All Right Reserved / Bản quyền thu�
