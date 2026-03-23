@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="lienhe.css">
+
 </head>
 
 <body>
@@ -66,61 +67,65 @@
     <main>
         <div class="container">
 
-    <div class="left">
-        <h1>Liên Hệ</h1>
-        <p class="breadcrumb"> <a href="main.html" class="trangchu">TRANG CHỦ</a>  >  <b>LIÊN HỆ</b></p>
-    </div>
-
-    <div class="contact-box">
-        <h2>Gửi liên hệ đến Hoàng Tử Bé</h2>
-
-        <form>
-
-            <div class="row">
-                <div class="form-group">
-                    <label>Họ và Tên <p>*</p> </label>
-                    <input required type="text" placeholder="Nhập họ và tên">
-                </div>
-
-                <div class="form-group">
-                    <label>Số điện thoại <p>*</p></label>
-                    <input required="text" placeholder="Nhập số điện thoại">
-                </div>
+            <div class="left">
+                <h1>Liên Hệ</h1>
+                <p class="breadcrumb"> <a href="main.html" class="trangchu">TRANG CHỦ</a> > <b>LIÊN HỆ</b></p>
             </div>
 
-            <div class="row">
-                <div class="form-group">
-                    <label>Email <p>*</p></label>
-                    <input required type="email" placeholder="Nhập email">
-                </div>
+            <div class="contact-box">
+                <h2>Gửi liên hệ đến Hoàng Tử Bé</h2>
 
-                <div class="form-group">
-                    <label>Yêu cầu <p>*</p></label>
-                        <select class="select-box">
-                            <option class="item">Báo giá</option>
-                            <option class="item" >Hợp tác</option>
-                            <option class="item">Quảng cáo</option>
-                            <option class="item" >Góp ý</option>
-                            <option class="item" >Khác</option>
-                        </select>
-                </div>
+                <form id="contactForm">
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Họ và Tên <p>*</p> </label>
+                            <input id="name" required type="text" placeholder="Nhập họ và tên">
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label>Số điện thoại <p>*</p></label>
+                            <input id="phone" required type="tel" placeholder="Nhập số điện thoại">
+                           
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Email <p>*</p></label>
+                            <input id="email" required type="email" placeholder="Nhập email">
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label>Yêu cầu <p>*</p></label>
+                            <select class="select-box">
+                                <option class="item">Báo giá</option>
+                                <option class="item">Hợp tác</option>
+                                <option class="item">Quảng cáo</option>
+                                <option class="item">Góp ý</option>
+                                <option class="item">Khác</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Nội dung chi tiết <p>*</p></label>
+                        <textarea id="message" required placeholder="Nhập nội dung chi tiết"></textarea>
+                       
+                    </div>
+
+                    <button type="submit">Gửi thông tin</button>
+
+                </form>
+
             </div>
 
-            <div class="form-group full">
-                <label>Nội dung chi tiết <p>*</p></label>
-                <textarea placeholder="Nhập nội dung chi tiết"></textarea>
-            </div>
-
-            <button type="submit">Gửi thông tin</button>
-
-        </form>
-
-    </div>
-
-</div>
+        </div>
 
     </main>
-     <footer class="footer">
+    <footer class="footer">
         <div class="grid">
 
             <div class="grid__row">
@@ -203,5 +208,7 @@
             <p class="footer_text">© All Right Reserved / Bản quyền thuộc về Hoang Tu Be Bakery.</p>
         </div>
     </footer>
+    <script src="lienhe.js"></script>
 </body>
+
 </html>
