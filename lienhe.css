@@ -6,12 +6,11 @@
 }
 
 body {
-  background: rgb(255, 251, 245);
+  background:rgb(255, 251, 245);
 }
 
 .container {
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
   margin: auto;
   display: flex;
   gap: 50px;
@@ -64,7 +63,6 @@ body {
 
 .form-group {
   flex: 1;
-  min-width: 0;
   display: flex;
   flex-direction: column;
 }
@@ -84,8 +82,7 @@ body {
   display: inline;
 }
 .select-box {
-  width: 100%;
-  max-width: 100%;
+  width: 300px;
   padding: 12px;
   font-size: 18px;
   border: 1px solid white;
@@ -105,13 +102,6 @@ body {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
-}
-
-/* thêm */
-.form-group input,
-.form-group select,
-textarea {
-  width: 100%;
 }
 
 textarea {
@@ -140,90 +130,4 @@ button {
 
 button:hover {
   background: rgb(242, 150, 37);
-}
-
-/* ===== RESPONSIVE ===== */
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .container {
-    width: 95%;
-    gap: 30px;
-  }
-
-  .left h1 {
-    font-size: 40px;
-  }
-
-  .contact-box h2 {
-    font-size: 32px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    width: 95%;
-    padding: 20px 0;
-  }
-
-  .left,
-  .contact-box {
-    width: 100%;
-  }
-
-  .left h1 {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  .breadcrumb {
-    text-align: center;
-  }
-
-  .contact-box {
-    padding: 20px;
-  }
-
-  .contact-box h2 {
-    font-size: 26px;
-    text-align: center;
-  }
-
-  .row {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .form-group input,
-  .form-group select,
-  textarea {
-    font-size: 16px;
-  }
-
-  .select-box {
-    width: 100%; /* fix bị lệch */
-  }
-
-  button {
-    font-size: 16px;
-    padding: 12px;
-  }
-}
-
-/* Mobile nhỏ */
-@media (max-width: 480px) {
-  .left h1 {
-    font-size: 26px;
-  }
-
-  .contact-box h2 {
-    font-size: 22px;
-  }
-
-  .form-group input,
-  textarea {
-    padding: 10px;
-  }
 }
