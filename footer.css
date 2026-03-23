@@ -2,7 +2,7 @@
 .footer {
   padding-top: 16px;
   border-top: 4px solid var(--primary-color);
-  background-color: var();
+  background-color: white;
 }
 
 .footer__heading {
@@ -12,10 +12,10 @@
   margin-bottom: 10px;
 }
 .footer__logo {
-  width: 250px;
+  width: 400px;
   height: auto;
-  margin-left: 0;
-  padding-right: 0;
+  margin-left: -150px;
+  padding-right: 60px;
 }
 .footer__list {
   padding-left: 5px;
@@ -35,28 +35,6 @@
   display: block;
 }
 .footer_item_link {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #737373;
-  padding: 2px 0;
-  display: flex;
-  align-items: center;
-}
-
-.footer_item_link:hover {
-  color: var(--main-color);
-}
-
-.footer-item__icon {
-  font-size: 1.6rem;
-  margin: -1px 8px -1px 0;
-}
-.footer_text {
-  margin-left: 0;
-  text-align: center;
-  font-size: 1rem;
-  margin-left: 300px;
-
   text-decoration: none;
   font-size: 1rem;
   color: #737373;
@@ -113,25 +91,21 @@
   margin-left: -5px;
   margin-right: -5px;
 }
-/* Test */
-.grid__column-2-4 {
+
+.grid__column-1 {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.grid__column-4 {
+.grid__column-2{
   padding-left: 5px;
   padding-right: 5px;
   width: 20%;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 0;
+  margin-right: 50px;
 }
-.grid__column-10 {
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 83.3334%;
-}
+
 .grid__row-text {
   display: flex;
   justify-content: center;
@@ -139,59 +113,4 @@
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: rgb(242, 150, 37);
-}
-
-/* REPONSIVE */
-
-/* tablet */
-@media (max-width: 1024px) {
-  .grid__column-4 {
-    width: 45%;
-  }
-
-  .grid__column-2-4 {
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer__logo {
-    margin: 0 auto;
-  }
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .grid__row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .grid__column-4 {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .footer__list {
-    padding: 0;
-  }
-
-  .footer_item_link {
-    justify-content: center;
-  }
-
-  .footer__logo {
-    width: 200px;
-  }
-}
-
-/* mobile nhỏ */
-@media (max-width: 480px) {
-  .footer__heading {
-    font-size: 1rem;
-  }
-
-  .footer_item_link {
-    font-size: 0.9rem;
-  }
 }
