@@ -85,18 +85,18 @@
 
                 <!-- QUANTITY -->
                 <div class="quantity">
-                    <button>-</button>
-                    <input type="text" value="1">
-                    <button>+</button>
+                    <button class="minus">-</button>
+                    <input type="text" value="1" class="qty">
+                    <button class="plus">+</button>
                 </div>
 
                 <!-- NOTE -->
                 <div class="note">
                     <p>Ghi chú:</p>
-                    <input type="text" placeholder="Thêm ghi chú">
+                    <input type="text" placeholder="Thêm ghi chú" class="note-input">
                 </div>
-                <button class="add-cart"> MUA NGAY</button>
-                <button class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+                <button class="add-cart" id="buyNow"> MUA NGAY</button>
+                <button class="add-cart" id="addToCart">THÊM VÀO GIỎ HÀNG</button>
 
             </div>
 
@@ -226,6 +226,13 @@
     </p>
   </div>
 </footer>
+<div id="toast" class="toast">
+    <div class="toast-content">
+        <div class="toast-icon">✔</div>
+        <div class="toast-text">Đã thêm vào giỏ hàng</div>
+    </div>
+</div>
+<script src="../cart.js"></script>
 </body>
 
 </html>
