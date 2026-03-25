@@ -85,18 +85,18 @@
 
                 <!-- QUANTITY -->
                 <div class="quantity">
-                    <button>-</button>
-                    <input type="text" value="1">
-                    <button>+</button>
+                    <button class="minus">-</button>
+                    <input type="text" value="1" class="qty">
+                    <button class="plus">+</button>
                 </div>
 
                 <!-- NOTE -->
                 <div class="note">
                     <p>Ghi chú:</p>
-                    <input type="text" placeholder="Thêm ghi chú">
+                    <input type="text" placeholder="Thêm ghi chú" class="note-input">
                 </div>
-                <button class="add-cart"> MUA NGAY</button>
-                <button class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+                <button class="add-cart" id="buyNow"> MUA NGAY</button>
+                <button class="add-cart" id="addToCart">THÊM VÀO GIỎ HÀNG</button>
 
             </div>
 
@@ -228,6 +228,82 @@
     </p>
   </div>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // ===== LẤY ELEMENT =====
+    const minusBtn = document.querySelector(".minus");
+    const plusBtn = document.querySelector(".plus");
+    const qtyInput = document.querySelector(".qty");
+
+    const addBtn = document.getElementById("addToCart");
+    const buyBtn = document.getElementById("buyNow");
+
+    // ===== KIỂM TRA NULL (tránh lỗi)
+    if (!minusBtn || !plusBtn || !qtyInput || !addBtn || !buyBtn) {
+        console.error("Thiếu class hoặc id trong HTML!");
+        return;
+    }
+
+    // ===== TĂNG GIẢM SỐ LƯỢNG =====
+    minusBtn.onclick = () => {
+        let value = parseInt(qtyInput.value) || 1;
+        if (value > 1) value--;
+        qtyInput.value = value;
+    };
+
+    plusBtn.onclick = () => {
+        let value = parseInt(qtyInput.value) || 1;
+        value++;
+        qtyInput.value = value;
+    };
+
+    // ===== CẬP NHẬT BADGE =====
+    function updateCartCount() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let total = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.querySelector(".badge").innerText = total;
+    }
+
+    // ===== THÊM VÀO GIỎ =====
+    addBtn.onclick = function () {
+
+        let product = {
+            name: "Baguette",
+            price: 30000,
+            quantity: parseInt(qtyInput.value),
+            image: "../Bánh Nướng/Baguette.png",
+            note: document.querySelector(".note-input").value
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        let existing = cart.find(item => item.name === product.name);
+
+        if (existing) {
+            existing.quantity += product.quantity;
+        } else {
+            cart.push(product);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        updateCartCount();
+        alert("Đã thêm vào giỏ hàng!");
+    };
+
+    // ===== MUA NGAY =====
+    buyBtn.onclick = function () {
+        addBtn.click();
+        window.location.href = "../GH.html";
+    };
+
+    // load khi mở trang
+    updateCartCount();
+
+});
+
+</script>
 </body>
 
 </html>
