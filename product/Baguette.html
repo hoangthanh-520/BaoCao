@@ -228,8 +228,14 @@
     </p>
   </div>
 </footer>
+<div id="toast" class="toast">
+    <div class="toast-content">
+        <div class="toast-icon">✔</div>
+        <div class="toast-text">Đã thêm vào giỏ hàng</div>
+    </div>
+</div>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
 
     // ===== LẤY ELEMENT =====
     const minusBtn = document.querySelector(".minus");
@@ -289,7 +295,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("cart", JSON.stringify(cart));
 
         updateCartCount();
-        alert("Đã thêm vào giỏ hàng!");
+        showToast("Đã thêm Baguette vào giỏ hàng!");
     };
 
     // ===== MUA NGAY =====
@@ -297,6 +303,19 @@ document.addEventListener("DOMContentLoaded", function () {
         addBtn.click();
         window.location.href = "../GH.html";
     };
+
+    function showToast(message) {
+    const toast = document.getElementById("toast");
+    const text = toast.querySelector(".toast-text");
+
+    text.innerText = message;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2000);
+}
 
     // load khi mở trang
     updateCartCount();
