@@ -8,7 +8,8 @@
 
         /* CONTAINER */
         .container {
-            width: 1200px;
+            max-width: 1200px;
+            width: 90%;
             margin: auto;
             margin-top: 40px;
         }
@@ -146,4 +147,80 @@
 
 .toast-text {
     font-weight: 500;
+}
+
+/* ===== Tablet (iPad) ===== */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%; 
+    }
+
+    .product {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .product-info h1 {
+        font-size: 24px;
+    }
+}
+
+/* ===== Mobile (Điện thoại) ===== */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .product-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .product-info h1 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .quantity button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .quantity input {
+        width: 40px;
+        height: 30px;
+    }
+
+    .add-cart {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .toast {
+        right: 10px;
+        left: 10px;
+        top: 20px;
+        font-size: 13px;
+    }
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-info {
+    flex: 1;
 }
